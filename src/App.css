@@ -1,0 +1,17 @@
+.App .container {
+  margin: 30px auto;
+  display: block;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+.App footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.App main {
+  margin: 50px 0;
+}
