@@ -1,21 +1,12 @@
-.DisplayDefinition ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.DisplayDefinition li {
-  list-style-type: none;
-  margin-top: 20px;
-  line-height: 1.5em;
-  text-align: left;
-}
-
 .DisplayDefinition div {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(252, 0, 0, 0.1);
   width: 50%;
   display: block;
-  margin: 10px auto;
-  padding: 30px;
+  margin: 0px auto;
+  padding: 20px;
   border-radius: 10px;
+}
+
+.DisplayDefinition article {
+  margin-bottom: 40px;
 }

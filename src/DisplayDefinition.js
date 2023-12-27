@@ -1,3 +1,5 @@
+import DisplayMultipleMeanings from "./DisplayMultipleMeanings";
+
 import "./DisplayDefinition.css";
 
 export default function DisplayDefinition(props) {
@@ -9,16 +11,9 @@ export default function DisplayDefinition(props) {
         <h3>{props.result.phonetic}</h3>
         {props.result.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
-              <h4>{index + 1}</h4>
-              <h5>{meaning.partOfSpeech}</h5>
-              <ul>
-                <li>{meaning.definition}</li>
-                <li>
-                  <em>{meaning.example}</em>{" "}
-                </li>
-              </ul>
-            </div>
+            <article key={index}>
+              <DisplayMultipleMeanings meaning={meaning} index={index} />
+            </article>
           );
         })}
       </div>
