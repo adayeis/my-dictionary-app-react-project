@@ -4,12 +4,8 @@
 
 .Dictionary form input {
   margin: 3px;
-}
-
-.Dictionary li {
-  list-style-type: none;
-  margin: 20px;
-  text-decoration-line: underline;
-  text-underline-offset: 5px;
-  line-height: 1.5em;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid black;
 }
