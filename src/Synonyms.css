@@ -1,0 +1,6 @@
+.Synonyms li {
+  display: inline;
+  margin-right: 15px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
