@@ -4,3 +4,7 @@
   text-decoration-line: underline;
   text-underline-offset: 5px;
 }
+
+.Synonyms li:first-child {
+  text-decoration-line: none;
+}
