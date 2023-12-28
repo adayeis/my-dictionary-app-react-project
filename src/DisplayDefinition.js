@@ -5,7 +5,7 @@ import "./DisplayDefinition.css";
 export default function DisplayDefinition(props) {
   if (props.result) {
     console.log(props.result);
-    if (props.result.status != "not_found") {
+    if (props.result.status !== "not_found") {
       return (
         <div className="DisplayDefinition">
           <h2>{props.result.word}</h2>
