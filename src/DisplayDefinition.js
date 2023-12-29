@@ -9,7 +9,9 @@ export default function DisplayDefinition(props) {
       return (
         <div className="DisplayDefinition">
           <h2>{props.result.word}</h2>
-          <h3>{props.result.phonetic}</h3>
+          <h3>
+            <em>{props.result.phonetic}</em>{" "}
+          </h3>
           {props.result.meanings.map(function (meaning, index) {
             return (
               <article key={index}>

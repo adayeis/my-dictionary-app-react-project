@@ -4,9 +4,8 @@ import "./DisplayMultipleMeanings.css";
 
 export default function DisplayMultipleMeanings(props) {
   return (
-    <div className="DisplayMultipleMeanings">
-      <h4>{props.index + 1}</h4>
-      <h5>{props.meaning.partOfSpeech}</h5>
+    <section className="DisplayMultipleMeanings">
+      <h4>{props.meaning.partOfSpeech}</h4>
       <ul>
         <li>
           <strong>Definition:</strong> {props.meaning.definition}
@@ -18,6 +17,6 @@ export default function DisplayMultipleMeanings(props) {
           <Synonyms synonyms={props.meaning.synonyms} />
         </li>
       </ul>
-    </div>
+    </section>
   );
 }

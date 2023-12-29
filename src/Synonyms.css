@@ -1,10 +1,13 @@
 .Synonyms li {
-  display: inline;
+  display: inline-block;
   margin-right: 15px;
   text-decoration-line: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
+  opacity: 0.7;
+  text-decoration-color: rgba(0, 0, 0, 0.8);
+  text-decoration-thickness: 0.5px;
 }
 
-.Synonyms li:first-child {
-  text-decoration-line: none;
+.Synonyms {
+  text-align: center;
 }

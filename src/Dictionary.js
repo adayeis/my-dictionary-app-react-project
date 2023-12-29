@@ -26,7 +26,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <form onSubmit={callDictionaryApi}>
         <input type="search" placeholder="Search" onChange={setValue} />
-        <input type="submit" />
+        <input type="submit" value="Search" />
       </form>
       <DisplayDefinition result={result} />
     </div>

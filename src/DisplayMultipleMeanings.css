@@ -7,6 +7,15 @@
 .DisplayMultipleMeanings li {
   list-style-type: none;
   margin-top: 20px;
-  line-height: 1.5em;
+  line-height: 1.2em;
   text-align: left;
+}
+
+.DisplayMultipleMeanings li:last-child {
+  margin-bottom: 20px;
+}
+
+.DisplayMultipleMeanings em {
+  font-size: 13px;
+  opacity: 0.7;
 }

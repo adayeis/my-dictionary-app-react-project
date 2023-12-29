@@ -11,7 +11,9 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer>coded by 👩🏻‍💻 Ada Yeis</footer>
+        <footer>
+          coded by 👩🏻‍💻 <strong>Ada Yeis</strong>
+        </footer>
       </div>
     </div>
   );
