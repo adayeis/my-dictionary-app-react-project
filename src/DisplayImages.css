@@ -1,4 +1,4 @@
-.SearchImages img {
+.DisplayImages img {
   width: 30%;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 3px;
@@ -7,13 +7,13 @@
 }
 
 @media (max-width: 700px) {
-  .SearchImages img {
+  .DisplayImages img {
     width: 45%;
   }
 }
 
 @media (max-width: 768px) {
-  .SearchImages img {
+  .DisplayImages img {
     width: 45%;
   }
 }

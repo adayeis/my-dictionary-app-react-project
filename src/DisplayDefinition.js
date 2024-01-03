@@ -1,5 +1,5 @@
 import DisplayMultipleMeanings from "./DisplayMultipleMeanings";
-import SearchImages from "./SearchImages";
+import DisplayImages from "./DisplayImages";
 
 import "./DisplayDefinition.css";
 
@@ -19,7 +19,7 @@ export default function DisplayDefinition(props) {
               </div>
             );
           })}
-          <SearchImages keyword={props.result.word} />
+          <DisplayImages keyword={props.result.word} />
         </div>
       );
     } else {
