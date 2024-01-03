@@ -6,7 +6,10 @@ function App() {
     <div className="App">
       <div className="container">
         <header>
-          <h1>My Dictionary</h1>
+          <h1>
+            {" "}
+            <a href="/">My Dictionary</a>{" "}
+          </h1>
         </header>
         <main>
           <Dictionary />

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./SearchImages.css";
 
 export default function SearchImages(props) {
@@ -13,13 +13,18 @@ export default function SearchImages(props) {
     let imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${props.keyword}&key=${imagesApiKey}`;
     axios.get(imagesApiUrl).then(searchImages);
   }
+
+  useEffect(() => {
+    setImages(null);
+  }, [props.keyword]);
+
   if (images) {
     return (
       <section className="SearchImages">
         {" "}
         {images.map(function (image, index) {
           return (
-            <img key={index} src={image.src.original} alt={props.keyword} />
+            <img key={index} src={image.src.landscape} alt={props.keyword} />
           );
         })}
       </section>

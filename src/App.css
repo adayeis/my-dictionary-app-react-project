@@ -1,9 +1,11 @@
 .App .container {
   margin: 60px auto;
   display: block;
+  max-width: 960px;
 }
 
-.App h1 {
+.App h1 a {
+  display: block;
   text-align: center;
   font-size: 56px;
   color: rgba(252, 0, 0, 0.7);

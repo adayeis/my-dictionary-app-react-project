@@ -1,7 +1,19 @@
 .SearchImages img {
   width: 30%;
-  background-color: rgb(240, 248, 255, 0.6);
-  padding: 5px;
-  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3px;
+  margin: 3px;
   border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .SearchImages img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .SearchImages img {
+    width: 45%;
+  }
 }
