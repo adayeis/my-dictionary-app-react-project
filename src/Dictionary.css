@@ -15,6 +15,11 @@
 .Dictionary form input[type="submit"] {
   color: rgba(255, 82, 82, 0.9);
   background-color: white;
+  text-transform: lowercase;
+}
+
+.Dictionary form input[type="search"] {
+  text-transform: lowercase;
 }
 
 .Dictionary form input[type="submit"]:hover {

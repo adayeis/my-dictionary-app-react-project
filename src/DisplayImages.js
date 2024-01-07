@@ -1,36 +1,28 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
 import "./DisplayImages.css";
 
 export default function DisplayImages(props) {
-  const [images, setImages] = useState("");
-
-  function searchImages(response) {
-    setImages(response.data.photos);
-  }
-
-  function callApi() {
-    let imagesApiKey = `67ct2f0dc4c74e3fcab1f74do85ff4a4`;
-    let imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${props.keyword}&key=${imagesApiKey}`;
-    axios.get(imagesApiUrl).then(searchImages);
-  }
-
-  useEffect(() => {
-    setImages(null);
-  }, [props.keyword]);
-
-  if (images) {
-    return (
-      <section className="DisplayImages">
-        {" "}
-        {images.map(function (image, index) {
-          return (
-            <img key={index} src={image.src.landscape} alt={props.keyword} />
-          );
-        })}
-      </section>
-    );
+  if (props.image) {
+    if (props.image.length > 0) {
+      return (
+        <section className="DisplayImages">
+          {props.image.map(function (image, index) {
+            return (
+              <a
+                key={index}
+                href={image.src.original}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={image.src.landscape} alt={image.keyword} />
+              </a>
+            );
+          })}
+        </section>
+      );
+    } else {
+      return null;
+    }
   } else {
-    callApi();
+    return null;
   }
 }

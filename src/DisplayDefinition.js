@@ -1,6 +1,4 @@
 import DisplayMultipleMeanings from "./DisplayMultipleMeanings";
-import DisplayImages from "./DisplayImages";
-
 import "./DisplayDefinition.css";
 
 export default function DisplayDefinition(props) {
@@ -19,7 +17,6 @@ export default function DisplayDefinition(props) {
               </div>
             );
           })}
-          <DisplayImages keyword={props.result.word} />
         </div>
       );
     } else {
