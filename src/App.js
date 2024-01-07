@@ -15,7 +15,28 @@ function App() {
           <Dictionary />
         </main>
         <footer>
-          coded by 👩🏻‍💻 <strong>Ada Yeis</strong>
+          coded by 👩🏻‍💻 <strong>Ada Yeis</strong> | open-sourced on{" "}
+          <strong>
+            {" "}
+            <a
+              href="https://github.com/adayeis/my-dictionary-app-react-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>{" "}
+          </strong>{" "}
+          | hosten on{" "}
+          <strong>
+            {" "}
+            <a
+              href="https://dictionary-react-app-ada-yeis.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>{" "}
+          </strong>
         </footer>
       </div>
     </div>
